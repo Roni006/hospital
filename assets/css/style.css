@@ -2,7 +2,7 @@
 *AUTHOR NAME: ANIK ISLAM
 *TEMPLATE: HOSPITAL
 *VERSION: 1.0.0
-*/ 
+*/
 
 /*! ROOT VARIABLES  */
 :root {
@@ -10,6 +10,7 @@
     --black-color: #000;
     --global-font: "Nunito", sans-serif;
     --nav-menu-hover: #0099FF;
+    --health-care-bg: #f1fafc; 
 }
 
 /*? ESSENTIAL SET UP  */
@@ -17,73 +18,100 @@ body {
     font-family: var(--global-font);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.btn {
+    margin: 0;
+    padding: 0;
+}
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
-.container{
+.container {
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
 /*? ESSENTIAL SET UP  */
 
 /* ?SET UP FONTS  */
-h1{
+h1 {
     font-size: 50px;
 }
-h2{
+
+h2 {
     font-size: 40px;
 }
-h3{
+
+h3 {
     font-size: 35px;
-} 
-h4{
+}
+
+h4 {
     font-size: 25px;
 }
-h5{
+
+h5 {
     font-size: 20px;
 }
-h6{
+
+h6 {
     font-size: 18px;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
 }
+
 /* ?SET UP FONTS */
 
 
 /*!HEADER SECTION START  */
-.navbar{
-    padding: 30px  0 0 0;
+.navbar {
+    padding: 15px 0 0 0;
 }
-.navbar-nav .nav-item a{
+
+.navbar .container{
+    border-bottom: 1PX solid #ddd;
+    padding-bottom: 15px;
+}
+.navbar-brand img{
+    width: 155px;
+}
+.navbar-nav .nav-item a {
     color: var(--black-color);
-    font-size: 18px ;
-    font-weight: 500; 
+    font-size: 18px;
+    font-weight: 500;
     transition: all 0.3s ease-in-out;
 }
-.navbar-nav .nav-item a:hover{
-    color: var(--nav-menu-hover); 
+
+.navbar-nav .nav-item a:hover {
+    color: var(--nav-menu-hover);
 }
-.navbar-nav{
+
+.navbar-nav {
     display: flex;
-    gap: 40px;
+    /* gap: 40px; */
     flex-wrap: wrap;
 }
+
 .gbtn {
     border: 1px solid var(--nav-menu-hover);
     padding: 10px 40px;
@@ -93,30 +121,38 @@ h1,h2,h3,h4,h5,h6{
     transition: all 0.3s ease-in-out;
     display: inline-block;
 }
-.gbtn:hover{
+
+.gbtn:hover {
     background-color: var(--nav-menu-hover);
     color: var(--white-color);
 }
+
 
 /*!HEADER SECTION EMD */
 
 
 /*!HERO SECTION START  */
-.hero-section{ 
+.hero-section {
     padding: 70px 0;
     overflow: hidden;
 }
-.row{
+
+.hero-section .row {
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 100px;
+
 }
-.hero-title h1{
+
+.hero-title h1 {
     font-weight: 700;
 }
-.hero-desc p{
+
+.hero-desc p {
     font-size: 16px;
     margin: 20px 0 15px 0;
 }
+
 /*?(leter) .hero-img img{
     border-radius: 168px; 
 }
@@ -130,6 +166,57 @@ h1,h2,h3,h4,h5,h6{
     right: 18px;
 } */
 /*!HERO SECTION EMD */
+
+/*!HEALTH CARE SECTION START  */
+.health-care{
+    padding: 100px 0;
+    background-color: var(--health-care-bg);
+    overflow: hidden;
+}
+.helth-top{
+    text-align: center;
+}
+.health-care .row{
+    gap: 150px;
+}
+.health-sub-title{
+    color: var(--black-color);
+    margin-bottom: 20px;
+}
+.health-title h2 {
+    color: var(--black-color);
+    font-weight: 700;
+    width: 455px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+.heal-box{
+    background-color: var(--white-color);
+    width: 308px;
+    height: 230px; 
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heal-icon img {
+    position: absolute;
+    top: -75px;
+    left: 97px;
+}
+.health-title h5{
+    font-size: 600;
+    color: var(--black-color)
+}
+.heal-desc P {
+    font-size: 16PX;
+    margin: 0  auto;
+    margin-top: 15px;
+    width: 140px !important;
+}
+/*!HEALTH CARE SECTION EMD */
 
 /*! SECTION START  */
 /*! SECTION EMD */
