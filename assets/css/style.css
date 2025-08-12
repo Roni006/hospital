@@ -218,5 +218,31 @@ h6 {
 }
 /*!HEALTH CARE SECTION EMD */
 
+
+/*!ABOUTUS SECTION START  */ 
+.about-section{
+    padding: 100px 0;
+    overflow: hidden;
+}
+/* .about-section .row{
+    gap: 50px;
+} */
+
+.about-subtitle h5{
+    font-weight: 700; 
+}
+.about-title h2{
+    font-weight: 700;
+    margin-top: 20px;
+}
+.about-desc p{
+    padding: 30px 0 45px 0;
+}
+.about-section .about-right{
+    align-self: center;
+}
+/*!ABOUTUS SECTION EMD */
+
+
 /*! SECTION START  */
 /*! SECTION EMD */
